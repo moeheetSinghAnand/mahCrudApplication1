@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 id="main-header">Crud Application</h1>
+
+    <div class="container">
+        <div class="box1">
+            <h2> Student Table</h2>
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#myForm">ADD
+                STUDENT</button>
+        </div>
+        <table class="student-table table table-hover table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">S.</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Roll</th>
+                    <th scope="col">Grade</th>
+                    <th scope="col">Sex</th>
+                    <th scope="col">DOB</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>101</td>
+                    <td>Rahul</td>
+                    <td>5</td>
+                    <td>Male</td>
+                    <td>17.5.2001</td>
+                    <td>
+                        <button class=" btn btn-primary btn-sm">Update</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>102</td>
+                    <td>Rishav</td>
+                    <td>6</td>
+                    <td>Male</td>
+                    <td>18.6.2002</td>
+                    <td>
+                        <button class=" btn btn-primary btn-sm">Update</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="modal fade" id="myForm" tabindex="-1" aria-labelledby="myFormLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3 class="modal-title" id="myFormLabel">Add Student</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form name="form1">
+                        <input class="form-control mb-3" type="text" name="s_name" placeholder="Name">
+                        <input class="form-control mb-3" type="number" name="roll_no" placeholder="Roll Number">
+                        <input class="form-control mb-3" type="text" name="grade" placeholder="Grade">
+                        <select class="form-control mb-3" name="gender">
+                            <option value="">--Select--</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <input class="form-control mb-3" type="date" name="dob" required>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

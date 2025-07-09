@@ -1,0 +1,48 @@
+#main-header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.box1 h2 {
+    float: left;
+}
+
+.box1 button {
+    float: right;
+}
+
+.container {
+    margin-top: 65px;
+}
+
+.student-table {
+    text-align: center;
+}
+
+.btn{
+    color: black;
+    background-color: #fff;
+    border: 2px solid rgb(63, 27, 27);
+    border-radius: 1px 3px;
+/*  padding: 3x;              */
+}
+
+.btn:hover {
+    background-color: #004369;
+}
+
+.btn button:focus,
+.btn  button:active 
+{
+        background-color: black;
+        transition: none;
+}
+
